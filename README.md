@@ -1,14 +1,13 @@
 ![](readme/logo.jpg)
 
-**Smebra the Solana SPL Token Sniper Bot** 
+## **Smebra the ADVANCED Solana Raydium Token Sniper Bot (Updated December 2025)** 
 
 SMEBRA The ADVANCED Solana Sniping Bot, made for ultra-fast token trading on Raydium liquidity pools (USDC/SOL). Features include automated buy/sell, take profit (TP), stop loss (SL), rug pull check, liquidity and renounce checks. Designed for fast trading on the Solana blockchain, ensuring precision, speed, and profitability for every transaction.
 
-**Why Smebra?** 
+## **Why Smebra?** 
+Smebra is the ONLY ORIGINAL, LASTEST, tool for highest-speed token trading on Solana. Unlike outdated or lower-quality imitators, this bot is added with the latest optimizations and features to ensure top-tier performance.
 
-
-
-Smebra listens to new Raydium USDC or SOL pools and buys tokens for a fixed amount in USDC/SOL.
+It listens to new Raydium USDC or SOL pools and buys tokens for a fixed amount in USDC/SOL.
 Depending on the speed of the RPC node, the purchase usually happens before the token is available on Raydium UI for swapping.
 
 - `WSOL Snipe`
@@ -24,13 +23,17 @@ Depending on the speed of the RPC node, the purchase usually happens before the 
 
 ## SETUP
 To run the script you need to:
-1. Create a new empty Solana wallet
-2. Transfer some SOL to it
-3. Convert some SOL to USDC or WSOL (you need USDC or WSOL depending on the configuration set below)
+1. Use your Solana Wallet that you use to trade tokens
+2. Have SOL in it
+3. Convert little SOL to USDC / WSOL (you need USDC or WSOL depending on the configuration you set, I personally use WSOL, as it is faster.)
 
-`Jupiter Wrap` : https://jup.ag/
+`Jupiter Wrap` : https://jup.ag/ (To Convert SOL To WSOL)
 
 ![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/jupiterwrap.png)
+
+4. The ratio I suggest is 1:10, that is, for every 1 WSOL / USDC you'll use per trade, have 10 SOL in the wallet (so if you're using 0.1 WSOL / USDC per trade, have 1 SOL in wallet. Just make sure you have more SOL than WSOL / USDC)
+5. Although Smebra has a 95%+ Win Rate, only use the amount that you're okay losing.
+6. Never put all your eggs in one basket, but also, make sure you don't miss out on a golden basket, which is Smebra ;)
 
 ## CONFIG
 1. Configure the script by updating `.env.copy` file (**remove the .copy from the file name when done**).
@@ -50,13 +53,13 @@ To run the script you need to:
 15. `STOP_LOSS=50` (in %)
 16. `BIRDEYE_API_KEY=` (TP/SL, Burn/Lock) generate here : https://docs.birdeye.so/docs/authentication-api-keys
 
-![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/env.png)
+![](readme/env.png)
   
 ## INSTALL
 1. Install dependencies by typing: `npm install`
 2. Run the script by typing: `npm run buy` in terminal
 
-![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/preview.png)
+![](readme/preview.png)
 
 ## TAKE PROFIT
 
@@ -77,7 +80,7 @@ By default, auto sell is enabled. If you want to disable it, you need to:
 If you set AUTO_SELL_DELAY to 0, token will be sold immediately after it is bought.
 There is no guarantee that the token will be sold at a profit or even sold at all. The developer is not responsible for any losses incurred by using this feature.
 
-![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/token.png)
+![](readme/token.png)
 
 ## SNIPE LIST
 By default, script buys each token which has a new liquidity pool created and open for trading.
