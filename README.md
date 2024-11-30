@@ -1,6 +1,14 @@
 ![](readme/logo.jpg)
 
-**Solana SPL Token Sniper Bot** that listens to new Raydium USDC or SOL pools and buys tokens for a fixed amount in USDC/SOL.
+**Smebra the Solana SPL Token Sniper Bot** 
+
+SMEBRA The ADVANCED Solana Sniping Bot, made for ultra-fast token trading on Raydium liquidity pools (USDC/SOL). Features include automated buy/sell, take profit (TP), stop loss (SL), rug pull check, liquidity and renounce checks. Designed for fast trading on the Solana blockchain, ensuring precision, speed, and profitability for every transaction.
+
+**Why Smebra?** 
+
+
+
+Smebra listens to new Raydium USDC or SOL pools and buys tokens for a fixed amount in USDC/SOL.
 Depending on the speed of the RPC node, the purchase usually happens before the token is available on Raydium UI for swapping.
 
 - `WSOL Snipe`
