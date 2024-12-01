@@ -20,6 +20,8 @@ Depending on the speed of the RPC node, the purchase usually happens before the 
 - `Renounce Check`
 - `Fast Buy`
 
+![](readme/token.png)
+
 > [!NOTE]
 > This is provided as is, for learning purposes. Don't hesitate to contact me if you need any assistance.
 
@@ -31,7 +33,7 @@ To run the script you need to:
 
 `Jupiter Wrap` : https://jup.ag/ (To Convert SOL To WSOL)
 
-![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/jupiterwrap.png)
+![](readme/jupiterwrap.png)
 
 4. The ratio I suggest is 1:10, that is, for every 1 WSOL / USDC you'll use per trade, have 10 SOL in the wallet (so if you're using 0.1 WSOL / USDC per trade, have 1 SOL in wallet. Just make sure you have more SOL than WSOL / USDC)
 5. Although Smebra has a 95%+ Win Rate, only use the amount that you're okay losing.
@@ -115,8 +117,6 @@ By default, auto sell is enabled. If you want to disable it, you need to:
 If you set AUTO_SELL_DELAY to 0, token will be sold immediately after it is bought.
 There is no guarantee that the token will be sold at a profit or even sold at all. The developer is not responsible for any losses incurred by using this feature.
 
-![](readme/token.png)
-
 ## SNIPE LIST
 By default, script buys each token which has a new liquidity pool created and open for trading.
 There are scenarios when you want to buy one specific token as soon as possible during the launch event.
@@ -130,7 +130,7 @@ You can update the list while script is running. Script will check for new value
 Pool must not exist before the script starts.
 It will buy only when new pool is open for trading. If you want to buy token that will be launched in the future, make sure that script is running before the launch.
 
-![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/snipelist.png)
+![](/readme/snipelist.png)
 
 
 ## COMMON ISSUES
@@ -153,7 +153,7 @@ It will buy only when new pool is open for trading. If you want to buy token tha
 > `Error: No SOL token account found in wallet:`  
 > it means that wallet you provided doesn't have USDC/WSOL token account.
 > FIX: Go to Jup.ag and swap some SOL to USDC/WSOL. When you swap sol to wsol you should see it in wallet.
-![](readme/jup.png)
+![](readme/jupwsol.png)
 
 ## DISCLAIMER
 
