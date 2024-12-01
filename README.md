@@ -152,7 +152,7 @@ It will buy only when new pool is open for trading. If you want to buy token tha
 > If you see following error in your log file:  
 > `Error: No SOL token account found in wallet:`  
 > it means that wallet you provided doesn't have USDC/WSOL token account.
-> FIX: Go to Jup.ag and swap some SOL to USDC/WSOL. When you swap sol to wsol you should see it in wallet.
+> FIX: Go to [Jup.ag](https://jup.ag/) and swap some SOL to USDC/WSOL. When you swap sol to wsol you should see it in wallet.
 ![](readme/jupwsol.png)
 
 ## DISCLAIMER
