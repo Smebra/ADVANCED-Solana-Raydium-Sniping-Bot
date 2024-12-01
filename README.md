@@ -21,10 +21,10 @@ Depending on the speed of the RPC node, the purchase usually happens before the 
 > [!NOTE]
 > This is provided as is, for learning purposes. Don't hesitate to contact me if you need any assistance.
 
-## SETUP
+## Pre-Setup
 To run the script you need to:
 1. Use your Solana Wallet that you use to trade tokens
-2. Have SOL in it
+2. Have enough SOL in it
 3. Convert little SOL to USDC / WSOL (you need USDC or WSOL depending on the configuration you set, I personally use WSOL, as it is faster.)
 
 `Jupiter Wrap` : https://jup.ag/ (To Convert SOL To WSOL)
@@ -56,9 +56,39 @@ To run the script you need to:
 ![](readme/env.png)
   
 ## INSTALL
-1. Install dependencies by typing: `npm install`
-2. Run the script by typing: `npm run buy` in terminal
+1. Download And Extract The Repository Files by:
+   
+   Using the command `git clone https://github.com/Smebra/ADVANCED-Solana-Raydium-Sniping-Bot`
+   
+   OR
+   
+   Click The Green "Code" Button Above and select "Download ZIP"
 
+
+2. Install the Node.js environment on your computer (REQUIRED):
+   
+   https://nodejs.org/en
+
+
+3. On Your Terminal / Command Prompt Navigate to Bot's File By Typing:
+ 
+   `cd (our/bot/file/path/without/brackets)`
+
+
+4. Install dependencies by typing:
+
+    `npm install`
+
+   
+5. Run the script by typing:
+
+    `npm run buy`
+
+
+6. PRINT PROFITS
+
+
+   
 ![](readme/preview.png)
 
 ## TAKE PROFIT
