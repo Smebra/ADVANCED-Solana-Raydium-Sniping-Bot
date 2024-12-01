@@ -10,6 +10,8 @@ Smebra is the ONLY ORIGINAL, LASTEST, tool for highest-speed token trading on So
 It listens to new Raydium USDC or SOL pools and buys tokens for a fixed amount in USDC/SOL.
 Depending on the speed of the RPC node, the purchase usually happens before the token is available on Raydium UI for swapping.
 
+## **All New Features**
+
 - `WSOL Snipe`
 - `Auto-Sell`
 - `TP/SL`
@@ -38,20 +40,20 @@ To run the script you need to:
 ## CONFIG
 1. Configure the script by updating `.env.copy` file (**remove the .copy from the file name when done**).
 2. `PRIVATE_KEY` (your wallet private key)
-3. `RPC_ENDPOINT` (https RPC endpoint)
+3. `RPC_ENDPOINT` (https RPC endpoint, use Helios / Quicknode Free Rpc Nodes for this)
 4. `RPC_WEBSOCKET_ENDPOINT` (websocket RPC endpoint)
-5. `QUOTE_MINT` (which pools to snipe, USDC or WSOL)
+5. `QUOTE_MINT` (which pools to snipe, USDC or WSOL, I recommend WSOL)
 6. `QUOTE_AMOUNT` (amount used to buy each new token)
 7. `COMMITMENT_LEVEL`
 8. `CHECK_IF_IS_BURNED` (liquidity burn check)
 9. `CHECK_IF_IS_LOCKED` (liquidity lock check)
-10. `USE_SNIPE_LIST` (buy only tokens listed in snipe-list.txt)
+10. `USE_SNIPE_LIST` (buy only tokens listed in snipe-list.txt , used to snipe hype launches)
 11. `SNIPE_LIST_REFRESH_INTERVAL` (how often snipe list should be refreshed in milliseconds)
 12. `CHECK_IF_MINT_IS_RENOUNCED` (script will buy only if mint is renounced)
 13. `MIN_POOL_SIZE` (script will buy only if pool size is greater than specified amount)
 14. `TAKE_PROFIT=200` (in %)
 15. `STOP_LOSS=50` (in %)
-16. `BIRDEYE_API_KEY=` (TP/SL, Burn/Lock) generate here : https://docs.birdeye.so/docs/authentication-api-keys
+16. `BIRDEYE_API_KEY=` Generate here for free: https://docs.birdeye.so/docs/authentication-api-keys (Required Or Else TP/SL & Burn/Lock Won't Work)
 
 ![](readme/env.png)
   
@@ -79,13 +81,16 @@ To run the script you need to:
 
     `npm install`
 
+
+5. Remove The `.copy` from the `.env.copy` file and then open it & configure (Make Sure The Extension is .env & not .copy)
+
    
-5. Run the script by typing:
+6. Run the script by typing:
 
-    `npm run buy`
+    `npm run ssb`
 
 
-6. PRINT PROFITS
+7. PRINT PROFITS
 
 
    
@@ -127,6 +132,7 @@ It will buy only when new pool is open for trading. If you want to buy token tha
 
 ![](https://github.com/earthskyorg/Sol-Sniper-Bot/blob/main/readme/snipelist.png)
 
+
 ## COMMON ISSUES
 
 > [!IMPORTANT]
@@ -146,7 +152,8 @@ It will buy only when new pool is open for trading. If you want to buy token tha
 > If you see following error in your log file:  
 > `Error: No SOL token account found in wallet:`  
 > it means that wallet you provided doesn't have USDC/WSOL token account.
-> FIX: Go to dex and swap some SOL to USDC/WSOL. When you swap sol to wsol you should see it in wallet.
+> FIX: Go to Jup.ag and swap some SOL to USDC/WSOL. When you swap sol to wsol you should see it in wallet.
+![](readme/jup.png)
 
 ## DISCLAIMER
 
