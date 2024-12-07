@@ -1,6 +1,6 @@
 ![](readme/logo.jpg)
 
-## **Smebra the ADVANCED Solana Raydium Token Sniper Bot (Updated December 2024)** 
+## **Smebra the ADVANCED Solana Raydium Token Sniper Bot (Updated December 2024)**
 
 SMEBRA The ADVANCED Solana Sniping Bot, made for ultra-fast token trading on Raydium liquidity pools (USDC/SOL). Features include automated buy/sell, take profit (TP), stop loss (SL), rug pull check, liquidity and renounce checks. Designed for fast trading on the Solana blockchain, ensuring precision, speed, and profitability for every transaction.
 
