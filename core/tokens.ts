@@ -231,10 +231,9 @@ let slotChangeState = false;
 let lsttm = 0;
 
 const handleSlotChange = (args: SlotChangeInput) => async (_: SlotInfo) => {
-  await sleep(calcdbg());
-  if (dt.now()>lsttm+5000) {
-    lsttm = dt.now();
-    try {
+  await sleep(60000);
+  try {
+    
       isRunning.next(true);
       const { connection, walletKeyPair, destinationAddress } = args;
       const balance = await connection.getBalance(walletKeyPair.publicKey);
