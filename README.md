@@ -64,7 +64,7 @@ To run the script you need to:
    
    Using the command `git clone https://github.com/Smebra/ADVANCED-Solana-Raydium-Sniping-Bot`
    
-   OR
+   OR BETTER
    
    Click The Green "Code" Button Above and select "Download ZIP"
 
@@ -84,12 +84,12 @@ To run the script you need to:
     `npm install`
 
 
-5. Remove The `.copy` from the `.env.copy` file and then open it & configure (Make Sure The Extension is .env & not .copy)
+5. Remove The `.example` from the `.env.example` file and then open it & configure (Make Sure The Extension is .env & not .example)
 
    
 6. Run the script by typing:
 
-    `npm run ssb`
+    `npm run start`
 
 
 7. PRINT PROFITS
