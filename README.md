@@ -62,11 +62,7 @@ To run the script you need to:
 ## INSTALL
 1. Download And Extract The Repository Files by:
    
-   Using the command `git clone https://github.com/Smebra/ADVANCED-Solana-Raydium-Sniping-Bot`
-   
-   OR BETTER
-   
-   Click The Green "Code" Button Above and select "Download ZIP"
+   Clicking The Green "Code" Button Above and select "Download ZIP"
 
 
 2. Install the Node.js environment on your computer (REQUIRED):
