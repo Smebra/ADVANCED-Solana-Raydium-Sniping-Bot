@@ -60,6 +60,10 @@ To run the script you need to:
 ![](readme/env.png)
   
 ## INSTALL
+(You can always put this Readme File into ChatGPT & ask for a Detailed Step-by-Step Installation Tutorial From Scratch if you're new to installing bots.)
+
+---
+
 1. Download And Extract The Repository Files by:
    
    Clicking The Green "Code" Button Above and select "Download ZIP"
