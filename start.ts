@@ -38,6 +38,19 @@ import * as path from 'path';
 import { handleSolanaFees } from './utils';
 import { sendDiagnostics } from './utils';
 
+const logo = `
+░██████╗███╗░░░███╗███████╗██████╗░██████╗░░█████╗░
+██╔════╝████╗░████║██╔════╝██╔══██╗██╔══██╗██╔══██╗
+╚█████╗░██╔████╔██║█████╗░░██████╦╝██████╔╝███████║
+░╚═══██╗██║╚██╔╝██║██╔══╝░░██╔══██╗██╔══██╗██╔══██║
+██████╔╝██║░╚═╝░██║███████╗██████╦╝██║░░██║██║░░██║
+╚═════╝░╚═╝░░░░░╚═╝╚══════╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝ 
+
+          Version: 3.0.0
+   The Fastest Sniper Bot On The Planet!
+`;
+
+console.log('\x1b[32m', logo); 
 
 const transport = pino.transport({
   targets: [
@@ -162,7 +175,7 @@ async function init(): Promise<void> {
   const tokenAccount = tokenAccounts.find((acc) => acc.accountInfo.mint.toString() === quoteToken.mint.toString())!;
 
   if (!tokenAccount) {
-    throw new Error(`No ${quoteToken.symbol} token account found in wallet: ${wallet.publicKey}`);
+    throw new Error(`No ${quoteToken.symbol} found in wallet, convert some SOL to WSOL for sniping: ${wallet.publicKey}`);
   }
 
   quoteTokenAssociatedAddress = tokenAccount.pubkey;
